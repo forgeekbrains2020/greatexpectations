@@ -2,8 +2,8 @@
 For homework greatexpectations
 
 
-===============================
-ayashin.ods_payment
+
+======= ayashin.ods_payment =======
 
 
 Table Expectation(s)
@@ -62,11 +62,10 @@ batch.expect_column_min_to_be_between(column='pay_doc_num', max_value=10, min_va
 13. sum
 batch.expect_column_values_to_not_be_null(column='sum')
 Поле суммы не должно быть пустым.
-==================================================================================================================================
 
 
-==================================================================================================================================
-ayashin.ods_billing
+
+======= ayashin.ods_billing =======
 Table Expectation(s)
 1. batch.expect_table_row_count_to_be_between(max_value=10001, min_value=9000)
 предоложим, что нам было точно известно, что количество записей по биллингу должно быть не более 10000 и не менее 9000
@@ -110,8 +109,8 @@ batch.expect_column_values_to_be_between(column='created_at', max_value='2021-03
 дата создания должна быть в этих границах.
 
 
-===============================
-ayashin.ods_issue
+
+======= ayashin.ods_issue =======
 
 Table Expectation(s)
 1. batch.expect_table_row_count_to_be_between(max_value=10001, min_value=9000)
@@ -153,8 +152,8 @@ batch.expect_column_values_to_not_be_null(column='service')
 значения не должны быть пустыми
 
 
-===============================
-ayashin.ods_traffic
+
+======= ayashin.ods_traffic =======
 Table Expectation(s)
 1. batch.expect_table_row_count_to_be_between(max_value=10001, min_value=9000)
 предоложим, что нам было точно известно, что количество записей по биллингу должно быть не более 10000 и не менее 9000
@@ -198,4 +197,4 @@ batch.expect_column_median_to_be_between(column='bytes_received', max_value=2700
 batch.expect_column_values_to_be_between(column='load_date', max_value='2021-04-27 00:00:00', min_value='2021-04-19 00:00:00')
 загрузка данных должна было проходить с 19.04.21 по 26.04.21. проверим это
 
-===============================
+=======
