@@ -9,7 +9,7 @@ For homework greatexpectations
 Table Expectation(s)
 1.
 batch_kwargs = {'data_asset_name': 'ayashin.ods_payment', 'datasource': 'gp_my', 'limit': 10000, 'schema': 'ayashin', 'table': 'ods_payment'}
-изменен лимит до 10000, без этого не работали некоторые проверки (2)
+Изменен лимит до 10000, без этого не работали некоторые проверки (2)
 'limit': 1000 -> 'limit': 10000
 
 2. 
