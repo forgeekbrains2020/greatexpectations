@@ -7,6 +7,7 @@ For homework greatexpectations
 
 
 Table Expectation(s)
+
 1.
 batch_kwargs = {'data_asset_name': 'ayashin.ods_payment', 'datasource': 'gp_my', 'limit': 10000, 'schema': 'ayashin', 'table': 'ods_payment'}
 
@@ -79,7 +80,9 @@ batch.expect_column_values_to_not_be_null(column='sum')
 
 
 ======= ayashin.ods_billing =======
+
 Table Expectation(s)
+
 1. batch.expect_table_row_count_to_be_between(max_value=10001, min_value=9000)
 
 предоложим, что нам было точно известно, что количество записей по биллингу должно быть не более 10000 и не менее 9000
@@ -139,6 +142,7 @@ batch.expect_column_values_to_be_between(column='created_at', max_value='2021-03
 ======= ayashin.ods_issue =======
 
 Table Expectation(s)
+
 1. batch.expect_table_row_count_to_be_between(max_value=10001, min_value=9000)
 
 предоложим, что нам было точно известно, что количество записей по биллингу должно быть не более 10000 и не менее 9000
@@ -194,6 +198,7 @@ batch.expect_column_values_to_not_be_null(column='service')
 ======= ayashin.ods_traffic =======
 
 Table Expectation(s)
+
 1. batch.expect_table_row_count_to_be_between(max_value=10001, min_value=9000)
 
 предоложим, что нам было точно известно, что количество записей по биллингу должно быть не более 10000 и не менее 9000
@@ -205,6 +210,7 @@ Table Expectation(s)
 проверяем, чтобы поля в таблицы были в заданном порядке
 
 Column Expectation(s)
+
 4. user_id
 batch.expect_column_values_to_not_be_null(column='user_id')
 
