@@ -9,6 +9,7 @@ For homework greatexpectations
 Table Expectation(s)
 1.
 batch_kwargs = {'data_asset_name': 'ayashin.ods_payment', 'datasource': 'gp_my', 'limit': 10000, 'schema': 'ayashin', 'table': 'ods_payment'}
+
 Изменен лимит до 10000, без этого не работали некоторые проверки (2)
 'limit': 1000 -> 'limit': 10000
 
@@ -154,6 +155,7 @@ batch.expect_column_values_to_not_be_null(column='service')
 
 
 ======= ayashin.ods_traffic =======
+
 Table Expectation(s)
 1. batch.expect_table_row_count_to_be_between(max_value=10001, min_value=9000)
 предоложим, что нам было точно известно, что количество записей по биллингу должно быть не более 10000 и не менее 9000
